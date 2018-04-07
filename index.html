@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Book Marker Application</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light" onLoad="fetchBookmarks()">
+    <div style="margin-top: 5%;">
+    <div class="container">
+        <div class="">
+          <h3 style="margin-bottom: 3%;">Book Marker Application</h3>
+          <hr class="">
+          <form id="inputForm" class="inputForm" novalidate>
+              <div class="form-group">
+                <label for="SiteName"><h4>Site Name</h4></label>
+                <input type="text" class="form-control" id="siteName" placeholder="Site Name" value="" required>
+              </div>
+              <div class="form-group">
+                <label for="URL"><h4>Site Url</h4></label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Site Url" value="" required>
+              </div>
+            </div>
+            <hr class="">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Add To BookMark List</button>
+          </form>
+          <div id="BMList" style="margin-top: 30px;">
+          </div>
+        </div>
+      </div>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Application using JavaScript</p>
+      </footer>
+    </div>
+    <script src="./js/main.js" ></script>
+  </body>
+</html>
